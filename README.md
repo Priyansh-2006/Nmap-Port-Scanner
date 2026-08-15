@@ -86,7 +86,7 @@ The scanner performs basic rule-based classification of detected services.
 
 ## 🖥️ Application Workflow
 
-```text
+```text  
                 Target IP
                     │
                     ▼
@@ -106,9 +106,14 @@ The scanner performs basic rule-based classification of detected services.
              ┌──────┴──────┐
              ▼             ▼
           JSON Report   HTML Report
+``` 
+
 ________________________________________
+
 🧪 Lab Environment
+
 The project was tested in an isolated VMware environment:
+```
 ┌──────────────────────┐
 │      Kali Linux      │
 │   Nmap Scanner V8    │
@@ -121,12 +126,16 @@ The project was tested in an isolated VMware environment:
 │    Metasploitable 2  │
 │   Authorized Target  │
 └──────────────────────┘
+```
 Example lab target:
 Metasploitable 2 (isolated lab VM)
 The target is an intentionally vulnerable virtual machine used for cybersecurity education and testing.
 ________________________________________
+
 📊 Example Results
+
 The scanner successfully identified multiple services on the Metasploitable laboratory target, including:
+```
 21/tcp    FTP
 22/tcp    SSH
 23/tcp    Telnet
@@ -143,9 +152,13 @@ The V8 GUI also provides a risk summary such as:
 HIGH: 9
 MEDIUM: 9
 INFO: 5
+```
 ________________________________________
-📄 Reports
+
+📄 Reports 
+
 JSON Report
+
 The JSON report contains:
 •	Target IP
 •	Scan type
@@ -157,7 +170,9 @@ The JSON report contains:
 •	Version
 •	Risk classification
 •	Security recommendation
+
 HTML Report
+
 The HTML report provides a browser-friendly security assessment containing:
 •	Scan information
 •	Port results
@@ -166,42 +181,65 @@ The HTML report provides a browser-friendly security assessment containing:
 •	Security recommendations
 •	Security notice
 ________________________________________
-⚙️ Installation
+
+⚙️ Installation 
+
 Requirements
 •	Kali Linux / Linux
 •	Python 3
 •	Nmap
 •	python-nmap
 •	Tkinter
+
 Clone the Repository
+```
 git clone https://github.com/Priyansh-2006/Nmap-Port-Scanner.git
 cd Nmap-Port-Scanner
+```
 Create Virtual Environment
+```
 python3 -m venv venv
+```
 Activate Virtual Environment
+```
 source venv/bin/activate
+```
 Install Dependencies
+```
 pip install -r requirements.txt
+```
 Verify Nmap
+```
 nmap --version
+```
 ________________________________________
+
 ▶️ Usage
+
 Start the application:
+```
 python gui_scanner_v8.py
+```
 Enter an authorized target IP address.
+
 Select a scan type:
 •	Quick Scan
 •	Service & Version Detection
 •	Full TCP Port Scan
 •	Full TCP + Service Detection
+
 Click:
+
 START SCAN
+
 After the scan completes, you can:
 •	SAVE JSON
 •	GENERATE HTML
 •	CLEAR
 ________________________________________
+
 📁 Project Structure
+```
 Nmap-Port-Scanner/
 │
 ├── gui_scanner_v8.py
@@ -209,8 +247,11 @@ Nmap-Port-Scanner/
 ├── requirements.txt
 ├── .gitignore
 └── LICENSE
+```
 ________________________________________
+
 🔮 Future Improvements
+
 Possible future improvements include:
 •	CVE/CPE correlation
 •	More advanced vulnerability analysis
@@ -222,7 +263,9 @@ Possible future improvements include:
 •	Improved GUI design
 •	Authentication and access controls
 ________________________________________
+
 ⚠️ Security & Authorization
+
 This project is intended for:
 •	Cybersecurity education
 •	Authorized penetration-testing laboratories
@@ -231,9 +274,13 @@ This project is intended for:
 Only scan systems that you own or have explicit authorization to test.
 The author is not responsible for unauthorized or malicious use of this software.
 ________________________________________
+
 👨‍💻 Author
+
 Priyansh Saxena
+
 BCA Student | Cybersecurity Enthusiast
+
 Interests
 •	Penetration Testing
 •	Network Security
@@ -241,13 +288,12 @@ Interests
 •	Linux
 •	Python
 •	Cybersecurity Automation
+
 ________________________________________
+
 📜 License
+
 This project is licensed under the MIT License.
 
-After pasting it into `nano`, save with:
 
-**Ctrl + O → Enter → Ctrl + X**
-
-Then we'll check the README before pushing it to GitHub.
 
