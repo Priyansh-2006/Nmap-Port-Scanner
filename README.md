@@ -161,35 +161,57 @@ JSON Report
 
 The JSON report contains:
 •	Target IP
+
 •	Scan type
+
 •	Scan timestamp
+
 •	Number of open ports
+
 •	Port information
+
 •	Protocol
+
 •	Service
+
 •	Version
+
 •	Risk classification
+
 •	Security recommendation
 
 HTML Report
 
 The HTML report provides a browser-friendly security assessment containing:
+
 •	Scan information
+
 •	Port results
+
 •	Service/version information
+
 •	Risk levels
+
 •	Security recommendations
+
 •	Security notice
+
 ________________________________________
 
 ⚙️ Installation 
 
 Requirements
+
 •	Kali Linux / Linux
+
 •	Python 3
+
 •	Nmap
+
 •	python-nmap
+
 •	Tkinter
+
 
 Clone the Repository
 ```
@@ -223,9 +245,13 @@ python gui_scanner_v8.py
 Enter an authorized target IP address.
 
 Select a scan type:
+
 •	Quick Scan
+
 •	Service & Version Detection
+
 •	Full TCP Port Scan
+
 •	Full TCP + Service Detection
 
 Click:
@@ -235,9 +261,13 @@ START SCAN
 After the scan completes, you can: 
 
 •	SAVE JSON
+
 •	GENERATE HTML
+
 •	CLEAR
+
 ________________________________________
+
 
 📁 Project Structure
 ```
@@ -254,24 +284,39 @@ ________________________________________
 🔮 Future Improvements
 
 Possible future improvements include:
+
 •	CVE/CPE correlation
+
 •	More advanced vulnerability analysis
+
 •	Improved risk scoring
+
 •	Scan history
+
 •	Scan comparison
+
 •	Additional report formats
+
 •	Exportable security recommendations
+
 •	Improved GUI design
+
 •	Authentication and access controls
+
 ________________________________________
 
 ⚠️ Security & Authorization
 
 This project is intended for:
+
 •	Cybersecurity education
+
 •	Authorized penetration-testing laboratories
+
 •	Systems owned by the tester
+
 •	Systems where explicit permission has been granted
+
 Only scan systems that you own or have explicit authorization to test.
 The author is not responsible for unauthorized or malicious use of this software.
 ________________________________________
@@ -283,11 +328,17 @@ Priyansh Saxena
 BCA Student | Cybersecurity Enthusiast
 
 Interests
+
 •	Penetration Testing
+
 •	Network Security
+
 •	Ethical Hacking
+
 •	Linux
+
 •	Python
+
 •	Cybersecurity Automation
 
 ________________________________________
