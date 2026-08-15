@@ -232,7 +232,8 @@ Click:
 
 START SCAN
 
-After the scan completes, you can:
+After the scan completes, you can: 
+
 •	SAVE JSON
 •	GENERATE HTML
 •	CLEAR
