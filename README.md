@@ -66,8 +66,6 @@ The project was developed and tested in an isolated VMware cybersecurity lab usi
 
 The scanner performs basic rule-based classification of detected services.
 
-Examples:
-
 | Service / Port | Risk | Reason |
 |---|---|---|
 | FTP / 21 | HIGH | Traditional FTP does not provide encryption |
@@ -108,13 +106,9 @@ Examples:
              ┌──────┴──────┐
              ▼             ▼
           JSON Report   HTML Report
-
-
-
+________________________________________
 🧪 Lab Environment
-
 The project was tested in an isolated VMware environment:
-
 ┌──────────────────────┐
 │      Kali Linux      │
 │   Nmap Scanner V8    │
@@ -127,17 +121,12 @@ The project was tested in an isolated VMware environment:
 │    Metasploitable 2  │
 │   Authorized Target  │
 └──────────────────────┘
-
 Example lab target:
-
 Metasploitable 2 (isolated lab VM)
-
 The target is an intentionally vulnerable virtual machine used for cybersecurity education and testing.
-
+________________________________________
 📊 Example Results
-
 The scanner successfully identified multiple services on the Metasploitable laboratory target, including:
-
 21/tcp    FTP
 22/tcp    SSH
 23/tcp    Telnet
@@ -150,90 +139,69 @@ The scanner successfully identified multiple services on the Metasploitable labo
 5432/tcp  PostgreSQL
 5900/tcp  VNC
 8180/tcp  HTTP/Tomcat
-
 The V8 GUI also provides a risk summary such as:
-
 HIGH: 9
 MEDIUM: 9
 INFO: 5
-
-
+________________________________________
 📄 Reports
-JSON
-
+JSON Report
 The JSON report contains:
-
-Target IP
-Scan type
-Scan timestamp
-Number of open ports
-Port information
-Protocol
-Service
-Version
-Risk classification
-Security recommendation
-
-HTML
-
+•	Target IP
+•	Scan type
+•	Scan timestamp
+•	Number of open ports
+•	Port information
+•	Protocol
+•	Service
+•	Version
+•	Risk classification
+•	Security recommendation
+HTML Report
 The HTML report provides a browser-friendly security assessment containing:
-
-Scan information
-Port results
-Service/version information
-Risk levels
-Security recommendations
-Security notice
-
+•	Scan information
+•	Port results
+•	Service/version information
+•	Risk levels
+•	Security recommendations
+•	Security notice
+________________________________________
 ⚙️ Installation
-
- Requirements
-
-Kali Linux / Linux
-Python 3
-Nmap
-python-nmap
-Tkinter
-
-Clone the repository
+Requirements
+•	Kali Linux / Linux
+•	Python 3
+•	Nmap
+•	python-nmap
+•	Tkinter
+Clone the Repository
 git clone https://github.com/Priyansh-2006/Nmap-Port-Scanner.git
 cd Nmap-Port-Scanner
-
-Create virtual environment
+Create Virtual Environment
 python3 -m venv venv
-
-Activate virtual environment
+Activate Virtual Environment
 source venv/bin/activate
-
-Install dependencies
+Install Dependencies
 pip install -r requirements.txt
-
 Verify Nmap
 nmap --version
-
+________________________________________
 ▶️ Usage
-
 Start the application:
 python gui_scanner_v8.py
-
 Enter an authorized target IP address.
 Select a scan type:
-
-Quick Scan
-Service & Version Detection
-Full TCP Port Scan
-Full TCP + Service Detection
-
+•	Quick Scan
+•	Service & Version Detection
+•	Full TCP Port Scan
+•	Full TCP + Service Detection
 Click:
 START SCAN
-
 After the scan completes, you can:
-SAVE JSON
-GENERATE HTML
-CLEAR
-
+•	SAVE JSON
+•	GENERATE HTML
+•	CLEAR
+________________________________________
 📁 Project Structure
-
 Nmap-Port-Scanner/
 │
 ├── gui_scanner_v8.py
@@ -241,52 +209,45 @@ Nmap-Port-Scanner/
 ├── requirements.txt
 ├── .gitignore
 └── LICENSE
-
+________________________________________
 🔮 Future Improvements
-
-Possible future versions may include:
-
-CVE/CPE correlation
-More advanced vulnerability analysis
-Improved risk scoring
-Scan history
-Scan comparison
-Additional report formats
-Exportable security recommendations
-Improved GUI design
-Authentication and access controls
-
-
+Possible future improvements include:
+•	CVE/CPE correlation
+•	More advanced vulnerability analysis
+•	Improved risk scoring
+•	Scan history
+•	Scan comparison
+•	Additional report formats
+•	Exportable security recommendations
+•	Improved GUI design
+•	Authentication and access controls
+________________________________________
 ⚠️ Security & Authorization
-
 This project is intended for:
-
-Cybersecurity education
-Authorized penetration-testing laboratories
-Systems owned by the tester
-Systems where explicit permission has been granted
-
+•	Cybersecurity education
+•	Authorized penetration-testing laboratories
+•	Systems owned by the tester
+•	Systems where explicit permission has been granted
 Only scan systems that you own or have explicit authorization to test.
-
 The author is not responsible for unauthorized or malicious use of this software.
-
-
+________________________________________
 👨‍💻 Author
-
 Priyansh Saxena
-
 BCA Student | Cybersecurity Enthusiast
-
-Interested in:
-
-Penetration Testing
-Network Security
-Ethical Hacking
-Linux
-Python
-Cybersecurity Automation
-
-
+Interests
+•	Penetration Testing
+•	Network Security
+•	Ethical Hacking
+•	Linux
+•	Python
+•	Cybersecurity Automation
+________________________________________
 📜 License
-
 This project is licensed under the MIT License.
+
+After pasting it into `nano`, save with:
+
+**Ctrl + O → Enter → Ctrl + X**
+
+Then we'll check the README before pushing it to GitHub.
+
